@@ -2,9 +2,9 @@ version: '3.3'
 
 services:
   j-app:
-    image: lugalkiennn/j-app:0.0.2
+    image: lugalkiennn/j-app:0.0.3
 #    image: j-app
-    container_name: j-app-2
+    container_name: j-app-docker
     depends_on:
       j-db:
         condition: service_healthy
@@ -12,7 +12,7 @@ services:
     ports:
       - '8080:8080'
   j-db:
-    container_name: j-db-2
+    container_name: j-db-docker
     image: mysql:8.0.26
     restart: always
     environment:
