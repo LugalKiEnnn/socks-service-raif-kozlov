@@ -1,6 +1,4 @@
 
-DROP TABLE IF EXISTS socks;
-
 CREATE TABLE socks (
                        color varchar(25),
                        cotton_part int,
